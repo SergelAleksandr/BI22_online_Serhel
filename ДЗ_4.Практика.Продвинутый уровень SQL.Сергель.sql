@@ -54,7 +54,7 @@ GROUP BY dep_name;
 ------------------------------------------------------------
 
 
-SELECT concat(replace(emp_name, ' ', '_'), '@gmail.com')
+SELECT concat(replace(lower(emp_name), ' ', '_'), '@gmail.com')
 FROM Employees;
 
 --------------------------------------------------------
